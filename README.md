@@ -2,6 +2,11 @@
 
 This is a simple yet another favorite post plugin for WordPress.
 
+## Requirements
+
+* WordPress >= 4.6.
+* PHP 5.3 or higher.
+
 ## Features
 
 * Allows to add a button in the content of each post so that it can be marked / removed as a favorite.
