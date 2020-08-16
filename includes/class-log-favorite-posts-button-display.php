@@ -24,7 +24,7 @@ class Log_Favorite_Posts_Button_Display {
         // Run code only for Single post page
         if ( is_single() && get_post_type() == 'post' ) {
             $post_id = get_the_ID();
-            $button_text = ( $this->confirm_favorite( $post_id ) ) ? 'UNMARK THIS POST AS FAVORITE' : 'BOOKMARK THIS POST';
+            $button_text = ( $this->confirm_favorite( $post_id ) ) ? __( 'UNMARK THIS POST AS FAVORITE', 'log-favorite-posts' ) : __( 'BOOKMARK THIS POST', 'log-favorite-posts' );
 
             $button_html = '<div>';
                 $button_html .= '<button class="bookmark-button" id="' . $post_id . '">' . $button_text . '</button>';
@@ -45,8 +45,14 @@ class Log_Favorite_Posts_Button_Display {
         wp_enqueue_script(
             'log-favorite-posts',
             LOG_FAVORITE_POSTS_PLUGIN_URL . '/assets/js/public.js',
-            array( 'jquery' ),
+            array( 'jquery', 'wp-i18n' ),
             LOG_FAVORITE_POSTS_VERSION
+        );
+
+        wp_set_script_translations(
+            'log-favorite-posts',
+            'log-favorite-posts',
+            LOG_FAVORITE_POSTS_PLUGIN_URL . '/languages'
         );
     }
 

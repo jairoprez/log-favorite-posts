@@ -1,0 +1,50 @@
+# Copyright (C) 2020 Jairo Pérez
+# This file is distributed under the same license as the Log Favorite Posts plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Log Favorite Posts 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/log-favorite-posts\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2020-08-16T17:09:10+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.4.0\n"
+"X-Domain: log-favorite-posts\n"
+
+#. Plugin Name of the plugin
+msgid "Log Favorite Posts"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://github.com/jairoprez"
+msgstr ""
+
+#. Description of the plugin
+msgid "Allows users to add favorite posts"
+msgstr ""
+
+#. Author of the plugin
+msgid "Jairo Pérez"
+msgstr ""
+
+#: includes/class-log-favorite-posts-button-display.php:27
+#: assets/js/public.js:33
+msgid "UNMARK THIS POST AS FAVORITE"
+msgstr ""
+
+#: includes/class-log-favorite-posts-button-display.php:27
+#: assets/js/public.js:31
+msgid "BOOKMARK THIS POST"
+msgstr ""
+
+#: views/widget-fields.php:2
+msgid "Title:"
+msgstr ""
+
+#: views/widget-fields.php:7
+msgid "Number of posts to show:"
+msgstr ""

@@ -47,4 +47,6 @@ There are 2 different public endpoints that are available.
 `post_id(String)`
 Return Value: `Object with message and status or Error (Object)`
 
+## Internationalization
 
+The plugin includes a .pot file as a starting point for internationalization.

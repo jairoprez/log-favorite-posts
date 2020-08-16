@@ -45,6 +45,8 @@ require_once LOG_FAVORITE_POSTS_PLUGIN_DIR . '/lib/autoloader.php';
  * Instantiates the main class and initializes the plugin.
  */
 function log_favorite_posts_start() {
+    load_log_favorite_posts_textdomain();
+
     $log_favorite_posts = new Log_Favorite_Posts_Button_Display();
     $log_favorite_posts->initialize();
 
@@ -56,7 +58,17 @@ function log_favorite_posts_start() {
 }
 log_favorite_posts_start();
 
-add_action( 'widgets_init', function(){
+add_action( 'widgets_init', function() {
     register_widget( 'LogFavoritePosts\Includes\Log_Favorite_Posts_Widget' );
 });
 
+/**
+ * Load plugin textdomain.
+ */
+function load_log_favorite_posts_textdomain() {
+    load_plugin_textdomain(
+        'log-favorite-posts',
+        false,
+        plugin_basename( LOG_FAVORITE_POSTS_PLUGIN_DIR ) . '/languages'
+    );
+}
